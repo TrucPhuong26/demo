@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+<body>
+    <h1>Reverse a Number</h1>
+    <p id="output"></p>
+
+    <script>
+        function reverseNumber(num) {
+            //chuyen so thanh chuoi-mang cac ki tu-dao nguoc ki tu mang-gop phan tu mang thanh 1 chuoi
+            return num.toString().split('').reverse().join(''); 
+        }
+        let num = 32243;
+        let reversedNum = reverseNumber(num);
+        document.getElementById("output").innerHTML = `Reversed number: ${reversedNum}`;
+    </script>
+</body>
+</html>

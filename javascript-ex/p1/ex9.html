@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+    <h1>Email Validator</h1>
+    <input type="text" id="emailInput" placeholder="Enter email">
+    <button onclick="validateEmail()">Validate Email</button>
+    <p id="output"></p>
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("emailInput").value;
+            var pattern = /^[a-z A-Z 0-9._%+-]+@[a-z A-Z 0-9.-]+\.[a-z A-Z]{2,}$/;
+            if (pattern.test(email)) {
+                document.getElementById("output").innerHTML = "Valid email address.";
+            } else {
+                document.getElementById("output").innerHTML = "Invalid email address.";
+            }
+        }
+    </script>
+</body>
+</html>

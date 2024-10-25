@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function SpecialMenu() {
+    const menu = {
+        1: "Baked vegetables and Cheese", //t2
+        2: "Pizza",
+        3: "Vegetable Fried Rice",
+        4: "Bread Rolls",
+        5: "Cheese Toast"     //t6
+    };
+    const today = new Date().getDay();
+    if (today === 0 || today === 6) {
+        window.alert("The restaurant is closed today.");
+    } else {
+       window.alert(`Today's Special is: ${menu[today]}`);
+    }
+}
+SpecialMenu();
+   </script> 
+</body>
+</html>
